@@ -12,6 +12,7 @@
 		4F49207F2A4032B50025C29C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F49207E2A4032B50025C29C /* Assets.xcassets */; };
 		4F4920822A4032B50025C29C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F4920812A4032B50025C29C /* Preview Assets.xcassets */; };
 		4F4920892A403DEC0025C29C /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4920882A403DEC0025C29C /* CircleImage.swift */; };
+		4F49208B2A40418E0025C29C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F49208A2A40418E0025C29C /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		4F49207E2A4032B50025C29C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F4920812A4032B50025C29C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4F4920882A403DEC0025C29C /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		4F49208A2A40418E0025C29C /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				4F49207A2A4032B40025C29C /* LandmarksApp.swift */,
 				4F49207C2A4032B40025C29C /* ContentView.swift */,
 				4F4920882A403DEC0025C29C /* CircleImage.swift */,
+				4F49208A2A40418E0025C29C /* MapView.swift */,
 				4F49207E2A4032B50025C29C /* Assets.xcassets */,
 				4F4920802A4032B50025C29C /* Preview Content */,
 			);
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F49207D2A4032B40025C29C /* ContentView.swift in Sources */,
+				4F49208B2A40418E0025C29C /* MapView.swift in Sources */,
 				4F49207B2A4032B40025C29C /* LandmarksApp.swift in Sources */,
 				4F4920892A403DEC0025C29C /* CircleImage.swift in Sources */,
 			);
