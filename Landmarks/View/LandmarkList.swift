@@ -11,10 +11,8 @@ struct LandmarkList: View {
     private let landmarks = DataLoader.shared.landmarks
     
     var body: some View {
-        List {
-            LandmarkRow(landmark: landmarks[0])
-            
-            LandmarkRow(landmark: landmarks[1])
+        List(landmarks) { landmark in
+            LandmarkRow(landmark: landmark)
         }
     }
 }
