@@ -31,7 +31,7 @@ struct LandmarkRow: View {
 }
 
 struct LandmarkRow_Previews: PreviewProvider {
-    static let landmarks = DataLoader.shared.landmarks
+    static let landmarks = ModelData().landmarks
     
     static var previews: some View {
         Group {

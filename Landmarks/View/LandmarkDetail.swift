@@ -49,9 +49,7 @@ struct LandmarkDetail: View {
 }
 
 struct LandmarkDetail_Previews: PreviewProvider {
-    static let landmarks = DataLoader.shared.landmarks
-    
     static var previews: some View {
-        LandmarkDetail(landmark: landmarks[3])
+        LandmarkDetail(landmark: ModelData().landmarks[0])
     }
 }
