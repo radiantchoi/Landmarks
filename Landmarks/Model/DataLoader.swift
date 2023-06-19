@@ -5,7 +5,12 @@
 //  Created by Gordon Choi on 2023/06/19.
 //
 
+import Combine
 import Foundation
+
+final class ModelData: ObservableObject {
+    @Published var landmarks: [Landmark] = DataLoader.shared.landmarks
+}
 
 struct DataLoader {
     static let shared = DataLoader()
