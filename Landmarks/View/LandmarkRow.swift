@@ -26,9 +26,14 @@ struct LandmarkRow: View {
 }
 
 struct LandmarkRow_Previews: PreviewProvider {
+    static let landmarks = DataLoader.shared.landmarks
+    
     static var previews: some View {
-        let landmark = DataLoader.shared.landmarks[0]
-        
-        LandmarkRow(landmark: landmark)
+        Group {
+            LandmarkRow(landmark: landmarks[0])
+            
+            LandmarkRow(landmark: landmarks[1])
+        }
+        .previewLayout(.fixed(width: 300, height: 70))
     }
 }
