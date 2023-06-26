@@ -24,6 +24,7 @@
 		4FA9FC712A4991950005EEB6 /* BadgeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA9FC702A4991950005EEB6 /* BadgeBackground.swift */; };
 		4FA9FC732A4999630005EEB6 /* BadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA9FC722A4999630005EEB6 /* BadgeSymbol.swift */; };
 		4FA9FC752A4A15550005EEB6 /* RotateBadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA9FC742A4A15550005EEB6 /* RotateBadgeSymbol.swift */; };
+		4FA9FC772A4A15B90005EEB6 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA9FC762A4A15B90005EEB6 /* Badge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		4FA9FC702A4991950005EEB6 /* BadgeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeBackground.swift; sourceTree = "<group>"; };
 		4FA9FC722A4999630005EEB6 /* BadgeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeSymbol.swift; sourceTree = "<group>"; };
 		4FA9FC742A4A15550005EEB6 /* RotateBadgeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateBadgeSymbol.swift; sourceTree = "<group>"; };
+		4FA9FC762A4A15B90005EEB6 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				4FA9FC702A4991950005EEB6 /* BadgeBackground.swift */,
 				4FA9FC722A4999630005EEB6 /* BadgeSymbol.swift */,
 				4FA9FC742A4A15550005EEB6 /* RotateBadgeSymbol.swift */,
+				4FA9FC762A4A15B90005EEB6 /* Badge.swift */,
 				4F49209D2A4061030025C29C /* Landmarks */,
 				4F49209E2A40610F0025C29C /* Helpers */,
 			);
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F49207D2A4032B40025C29C /* ContentView.swift in Sources */,
+				4FA9FC772A4A15B90005EEB6 /* Badge.swift in Sources */,
 				4F49208B2A40418E0025C29C /* MapView.swift in Sources */,
 				4FA9FC752A4A15550005EEB6 /* RotateBadgeSymbol.swift in Sources */,
 				4F4920912A404C0D0025C29C /* DataLoader.swift in Sources */,
