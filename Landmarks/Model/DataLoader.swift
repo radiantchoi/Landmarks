@@ -9,12 +9,10 @@ import Combine
 import Foundation
 
 final class ModelData: ObservableObject {
-    let loader = DataLoader<Landmark>(fileName: "landmarkData.json")
-    @Published var landmarks: [Landmark] = []
+    @Published var landmarks: [Landmark] = DataLoader<Landmark>(fileName: "landmarkData.json").data
+    var hikes = DataLoader<Hike>(fileName: "hikeData.json").data
     
-    init() {
-        landmarks = loader.data
-    }
+    init() { }
 }
 
 struct DataLoader<T: Codable> {
