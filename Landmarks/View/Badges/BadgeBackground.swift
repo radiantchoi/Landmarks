@@ -16,30 +16,31 @@ struct BadgeBackground: View {
                 
                 let xScale: CGFloat = 0.832
                 let xOffset = (width * (1.0 - xScale)) / 2.0
+                width *= xScale
                 
                 path.move(
                     to: CGPoint(
                         x: width * 0.95 + xOffset,
-                        y: height * (0.2 + HexagonParameters.adjustment)
+                        y: height * (0.20 + HexagonParameters.adjustment)
                     )
                 )
                 
-                HexagonParameters.segments.forEach {
+                HexagonParameters.segments.forEach { segment in
                     path.addLine(
                         to: CGPoint(
-                            x: width * $0.line.x + xOffset,
-                            y: height * $0.line.y
+                            x: width * segment.line.x + xOffset,
+                            y: height * segment.line.y
                         )
                     )
                     
                     path.addQuadCurve(
                         to: CGPoint(
-                            x: width * $0.curve.x + xOffset,
-                            y: height * $0.curve.y
+                            x: width * segment.curve.x + xOffset,
+                            y: height * segment.curve.y
                         ),
                         control: CGPoint(
-                            x: width * $0.control.x + xOffset,
-                            y: width * $0.control.y
+                            x: width * segment.control.x + xOffset,
+                            y: width * segment.control.y
                         )
                     )
                 }
@@ -47,9 +48,9 @@ struct BadgeBackground: View {
             .fill(.linearGradient(
                 Gradient(
                     colors: [Self.gradientStart, Self.gradientEnd]),
-                startPoint: UnitPoint(x: 0.5, y: 0),
-                endPoint: UnitPoint(x: 0.5, y: 0.6)
-            )
+                    startPoint: UnitPoint(x: 0.5, y: 0),
+                    endPoint: UnitPoint(x: 0.5, y: 0.6)
+                )
             )
         }
         .aspectRatio(1, contentMode: .fit)
