@@ -9,16 +9,19 @@ import Combine
 import Foundation
 
 final class ModelData: ObservableObject {
-    @Published var landmarks: [Landmark] = DataLoader.shared.landmarks
+    let loader = DataLoader<Landmark>(fileName: "landmarkData.json")
+    @Published var landmarks: [Landmark] = []
+    
+    init() {
+        landmarks = loader.data
+    }
 }
 
-struct DataLoader {
-    static let shared = DataLoader()
+struct DataLoader<T: Codable> {
+    var data: [T] = []
     
-    var landmarks: [Landmark] = []
-    
-    private init() {
-        landmarks = load("landmarkData.json")
+    init(fileName: String) {
+        data = load(fileName)
     }
     
     func load<T: Decodable>(_ fileName: String) -> T {
