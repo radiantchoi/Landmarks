@@ -12,6 +12,10 @@ final class ModelData: ObservableObject {
     @Published var landmarks: [Landmark] = DataLoader<Landmark>(fileName: "landmarkData.json").data
     var hikes = DataLoader<Hike>(fileName: "hikeData.json").data
     
+    var features: [Landmark] {
+        landmarks.filter { $0.isFeatured }
+    }
+    
     var categories: [String: [Landmark]] {
         Dictionary(
             grouping: landmarks,
