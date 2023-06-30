@@ -40,7 +40,7 @@ struct BadgeBackground: View {
                         ),
                         control: CGPoint(
                             x: width * segment.control.x + xOffset,
-                            y: width * segment.control.y
+                            y: height * segment.control.y
                         )
                     )
                 }

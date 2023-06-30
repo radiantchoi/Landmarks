@@ -27,6 +27,7 @@ struct Badge: View {
                     .position(x: geometry.size.width / 2, y: 0.75 * geometry.size.height)
             }
         }
+        .scaledToFit()
     }
 }
 
