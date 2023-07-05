@@ -32,7 +32,6 @@ struct LandmarkList: View {
                 }
             }
             .navigationTitle("Landmarks")
-            .frame(minWidth: 300)
         }
     }
 }
@@ -43,3 +42,4 @@ struct LandmarkList_Previews: PreviewProvider {
             .environmentObject(ModelData())
     }
 }
+
